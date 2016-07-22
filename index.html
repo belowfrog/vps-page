@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Welcom</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="belowfrog,vps,remote">
+  <meta name="Description" content="belowfrog's remote vps">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+  <div class="main">
+    <h1 class="title" onclick="toggleClass(this)">这里不要点<span id="count">0</span></h1>
+    <p class="color-white">scp ~/Project/remote/* dovpn:~/www/</p>
+  </div>
+</body>
+
+<script type="text/javascript">
+  var time, countNumber = 1;
+	toggleClass = function (element) {
+		count.innerText = countNumber++;
+		element.classList.add('move');
+		time && clearTimeout(time);
+		time = setTimeout(function() {
+			element.classList.remove('move');
+		},500);
+	}
+
+</script>
+
+</html>

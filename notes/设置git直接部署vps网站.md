@@ -6,6 +6,11 @@
 >
 > [git添加多个远程仓库][oschina]
 
+
+
+> 之前一直用
+> scp ~/Project/remote/* dovpn:~/www/这种方式来放置页面，太麻烦了。
+
 ### 一、创建远程git仓库
 
 1. 创建github项目，拖项目
@@ -48,5 +53,5 @@
 
 
 
-[oschina]: http://my.oschina.net/shede333/blog/299032
-[digital ocean]: https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps
+[oschina]: http://my.oschina.net/shede333/blog/299032	"设置多remote源"
+[digital ocean]: https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps	"设置push自动部署"
